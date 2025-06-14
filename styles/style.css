@@ -49,3 +49,46 @@ ol {
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background-color: #D9D9D9;
 }
+
+  .page {
+    display: flex; /* Дополнительные свойства для Flexbox */
+    flex-direction: row; /* Направление главной оси */
+    justify-content: center; /* Выравнивание по главной оси */
+    align-items: center;
+    inline-size: 1200px;
+    block-size: 100%;
+    padding: 133px 30px;
+    font-family: "fira sans condenset", "sans serif";
+    font-size: 18px;
+    color: #fff;
+    background-color: #1b1919;
+    margin: auto;
+  }
+
+.content {
+  display: grid;
+  align-self: flex-end;
+  grid-template-columns: 1fr auto; 
+  grid-template-areas: "result content";
+  gap: 30px; /* Горизонтальные отступы между элементами */
+  max-width: 1200px; /* Максимальная ширина контейнера */
+  height: 100%;
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.content__list-container {
+  grid-area: list-container;
+  overflow-y: auto; /* Полоса прокрутки при переполнении */
+}
+
+.content__details {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Растягиваем на всю доступную ширину */
+  height: 100%; /* Растягиваем на всю доступную высоту */
+}
