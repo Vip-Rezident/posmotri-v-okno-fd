@@ -132,3 +132,7 @@ background-color: #545050;
  object-fit: cover;
  object-position: 100%;
 }
+
+.content__video-card-description-container{
+  flex-grow: 1;
+}
