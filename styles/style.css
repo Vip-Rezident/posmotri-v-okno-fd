@@ -75,15 +75,16 @@ ol {
   height: 100%;
 }
 
-.search-form {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+.content__list-item{
+  display: grid;
+  gap: 30px;
 }
+
 
 .content__list-container {
   grid-area: list-container;
   overflow-y: auto; /* Полоса прокрутки при переполнении */
+  max-height: 300px; /* Пример максимального вертикального размера */
 }
 
 .content__details {
@@ -93,11 +94,6 @@ ol {
   height: 100%; /* Растягиваем на всю доступную высоту */
 }
 
-.search-form{
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
 
 .content_card-link{
 color: inherit;
@@ -120,9 +116,9 @@ text-decoration: underline;
 background-color: #545050;
 }
 
-.content__video-card{
+.content__video-card{ 
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   max-width: 384;
 }
 
@@ -130,9 +126,67 @@ background-color: #545050;
  width: 194px;
  height: 103px;
  object-fit: cover;
- object-position: 100%;
+ object-position: center;
 }
 
 .content__video-card-description-container{
   flex-grow: 1;
 }
+
+.result__video-container{
+ display: flex;
+ max-width: 100%; /* Занимает всю ширину контейнера */
+ max-height: 100%;
+ padding-top: 78px;
+ padding-bottom: 16px;
+ object-fit: cover;
+}
+
+
+.search-form{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  outline: none;
+}
+
+.title{
+font-size: 75px;
+font-weight: 700;
+font-family: 'Oswald', "sans serif";
+text-transform: uppercase;
+color: #FFFFFF;
+line-height: 1;
+}
+
+.search-form__fieldset-title{
+font-size: 18px;
+font-weight: 400;
+font-family: 'fira Sans Condensed', "sans serif";
+color: #FFFFFF;
+}
+
+.content__video-card-title{
+font-size: 30px;
+font-weight: 700;
+font-family: 'Oswald', "sans serif";
+text-transform: uppercase;
+color: #FFFFFF;
+text-decoration: none;
+overflow: hidden; /* Скрывает излишний текст */
+text-overflow: ellipsis; /* Заменяет излишний текст на "..." */
+white-space: nowrap; /* Запрещает перенос строк */
+}
+
+.content__video-card-description{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Ограничивает количество строк */
+  -webkit-box-orient: vertical;
+  overflow: hidden; /* Скрывает излишний текст */
+  text-overflow: ellipsis; /* Заменяет излишний текст на "..." */
+  color: #FFFFFF;
+}
+
