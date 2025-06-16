@@ -80,6 +80,11 @@ ol {
   gap: 30px;
 }
 
+.content__list-item{
+  position: relative;
+ 
+}
+
 .content__list-item a{
 text-decoration: none;
 font-size: 18px;
@@ -130,6 +135,14 @@ text-decoration: underline;
 
 .content_card-link:active{
 background-color: #545050;
+}
+
+.content__accent{  /* ПО */
+  font-size: 75px;
+  font-weight: 700;
+  font-family: 'Oswald', "sans serif";
+  text-transform: uppercase;
+  color: #545050;
 }
 
 .content__video-card{ 
