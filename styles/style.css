@@ -67,12 +67,11 @@ ol {
 
 .content {
   display: grid;
-  align-self: flex-end;
+  align-items: flex-end;
   grid-template-columns: auto 399px;
   align-content: end;
   gap: 30px; /* Горизонтальные отступы между элементами */
   max-width: 1140px; /* Максимальная ширина контейнера */
-  height: 100%;
 }
 
 .content__list {
@@ -102,7 +101,6 @@ ol {
   display: flex;
   flex-direction: column;
   width: 100%; /* Растягиваем на всю доступную ширину */
-  height: 100%; /* Растягиваем на всю доступную высоту */
 }
 
 .content_card-link {
@@ -158,6 +156,11 @@ ol {
 }
 
 .result {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 711px;
+  padding-top: 78px;
 }
 
 .result__video {
