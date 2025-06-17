@@ -8,14 +8,15 @@ html {
   block-size: 100%;
 }
 
-.page {
-  inline-size: 1200px;
-  block-size: 100%;
-  margin: auto;
-  color: #fff;
-  font-family: "Fira Sans Condensed", sans-serif;
-  font-size: 18px;
-  background-color: #1b1919;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 h1,
@@ -94,6 +95,7 @@ ol {
 .content__list-container {
   grid-area: list-container;
   overflow-y: auto; /* Полоса прокрутки при переполнении */
+  overflow-x: auto;
   max-height: 300px; /* Пример максимального вертикального размера */
 }
 
@@ -155,12 +157,16 @@ ol {
   object-position: center;
 }
 
-.result {
+.result__video-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  max-width: 711px;
-  padding-top: 78px;
+  width: 711px;
+  height: 386px;
+  margin-bottom: 16px;
+}
+
+.result {
 }
 
 .result__video {
@@ -170,26 +176,32 @@ ol {
   object-fit: cover;
 }
 
-.result__video-container {
-  position: relative;
-  display: flex;
-  max-width: 711px; /* Занимает всю ширину контейнера */
-  max-height: 386px;
-  /* padding-top: 78px;*/
-  padding-bottom: 16px;
-}
-
 .search-form {
   display: flex;
   justify-content: space-between;
   text-decoration: none;
+  align-items: flex-end;
+}
+
+.search-form__label {
+  display: flex;
+  align-items: center; /* Выравнивает элементы по центру по вертикали */
+  width: fit-content; /* Ширина элемента подстраивается под его содержимое */
+}
+
+.search-form__fieldset-title {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 100%;
+  font-family: "fira Sans Condensed", "sans serif";
+  color: #ffffff;
+  text-align: left;
 }
 
 .search-form__textfield {
   font-size: 18px;
   font-weight: 400;
   border-top: solid 1px #fff;
-  border-bottom: solid 1px #fff;
   border-left: none;
   border-right: none;
   background-color: inherit;
@@ -197,6 +209,51 @@ ol {
   font-family: "Fira Sans Condensed", sans-serif;
   color: inherit;
   line-height: 100%;
+}
+
+.search-form__label-text {
+  font-size: 18px;
+  font-weight: 400;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: "Fira Sans Condensed", "sans serif";
+}
+
+.search-form__checkbox-list {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.search-form__pseudo-checkbox {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 19px;
+  height: 19px;
+  box-sizing: border-box;
+  margin-right: 5px;
+  cursor: pointer;
+  border: solid 1px #ffffff;
+}
+
+.search-form__pseudo-checkbox::after {
+  content: "";
+  display: none;
+  width: 15px;
+  height: 15px;
+  background-color: #ffffff;
+}
+
+.search-form__input {
+  /* border: 1px solid #f00808;Граница поля ввода
+  padding: 5px; Отступы внутри поля ввода 
+  border-radius: 4px; Скруглённые углы 
+  font-size: 16px;  Размер шрифта */
+}
+
+input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
+  display: block;
 }
 
 .search-form__textfield::placeholder {
@@ -209,16 +266,8 @@ ol {
   font-family: "Oswald", "sans serif";
   text-transform: uppercase;
   color: #ffffff;
-  line-height: 1;
-  padding-bottom: 26px;
-}
-
-.search-form__fieldset-title {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 100%;
-  font-family: "fira Sans Condensed", "sans serif";
-  color: #ffffff;
+  line-height: 94%;
+  margin-bottom: 15px;
 }
 
 .content__video-card-title {
@@ -250,60 +299,13 @@ ol {
   flex-grow: 1;
 }
 
-.search-form__checkbox-list {
-  display: flex;
-  gap: 15px;
-  align-items: center;
-}
-
-.search-form__label-text {
-  font-size: 18px;
-  font-weight: 400;
-  background-color: transparent;
-  color: #ffffff;
-  font-family: "Fira Sans Condensed", "sans serif";
-}
-
-.search-form__pseudo-checkbox {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 19px;
-  height: 19px;
-  box-sizing: border-box;
-  margin-right: 5px;
-  cursor: pointer;
-  border: solid 1px #ffffff;
-}
-
-.search-form__pseudo-checkbox::after {
-  content: "";
-  display: none;
-  width: 15px;
-  height: 15px;
-  background-color: #ffffff;
-}
-
-input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
-  display: block;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .button {
   border: solid 1px #ffffff; /* Задайте рамку  кнопки */
   color: #ffffff; /* Задайте цвет текста кнопки */
   font-family: "Fira Sans Condensed", "sans serif";
   background-color: transparent; /* Задайте прозрачный фон кнопки */
+  font-size: 18px;
+  align-content: end;
 }
 
 button:focus {
