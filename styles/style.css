@@ -205,7 +205,7 @@ ol {
 }
 
 .search-form__textfield {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 400;
   border-top: solid 1px #fff;
   border-left: none;
@@ -214,6 +214,8 @@ ol {
   appearance: none;
   color: inherit;
   line-height: 100%;
+  min-width: 226px;
+  text-decoration-skip: 3px;
 }
 
 .search-form__label-text {
@@ -246,23 +248,16 @@ ol {
   border: solid 1px #ffffff;
 }
 
+input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
+  display: block;
+}
+
 .search-form__pseudo-checkbox::after {
   content: "";
   display: none;
   width: 15px;
   height: 15px;
   background-color: #ffffff;
-}
-
-.search-form__input {
-  /* border: 1px solid #f00808;Граница поля ввода
-  padding: 5px; Отступы внутри поля ввода 
-  border-radius: 4px; Скруглённые углы 
-  font-size: 16px;  Размер шрифта */
-}
-
-input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
-  display: block;
 }
 
 .search-form__textfield::placeholder {
@@ -358,3 +353,4 @@ button:focus {
 .more-button:focus-visible {
   outline: solid 1px #ffffff;
 }
+
