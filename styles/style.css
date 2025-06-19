@@ -59,7 +59,7 @@ ol {
   align-items: center;
   inline-size: 1200px;
   block-size: 100%;
-  font-family: "fira sans condenset", "sans serif";
+  font-family: "Fira Sans Condensed", "Sans Serif";
   font-size: 18px;
   color: #fff;
   background-color: #1b1919;
@@ -85,18 +85,24 @@ ol {
 }
 
 .content__list-item a {
+  display: block;    /* Что бы работал :active */
   text-decoration: none;
   font-size: 18px;
   font-weight: 400;
-  font-family: "Fira Sans Condensed", "sans serif";
+  font-family: "Fira Sans Condensed", "Sans Serif";
   color: #fff;
+}
+
+.content__list-item a:active {
+background-color: #545050;
 }
 
 .content__list-container {
   grid-area: list-container;
   overflow-y: auto; /* Полоса прокрутки при переполнении */
   overflow-x: auto;
-  max-height: 300px; /* Пример максимального вертикального размера */
+  height: 299px; /* Пример максимального вертикального размера */
+  width: 399px;
 }
 
 .content__details {
@@ -163,7 +169,7 @@ ol {
   flex-direction: column;
   width: 711px;
   height: 386px;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .result__video {
@@ -179,6 +185,7 @@ ol {
   text-decoration: none;
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
+  margin-bottom: 4px;
 }
 
 .search-form__label {
@@ -271,7 +278,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
   text-transform: uppercase;
   color: #ffffff;
   line-height: 94%;
-  margin-bottom: 15px;
+  margin-bottom: 26px;
 }
 
 .content__video-card-title {

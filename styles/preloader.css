@@ -39,15 +39,6 @@
   position: relative;
 }
 
-.result__video-container .preloader,
-.content__list-container .preloader {
- position: absolute;
- top: 50%;
- left: 50%;
- transform: translate(-50%, -50%);
- z-index: 5;
-}
-
 @keyframes focusfade {
   0% {
     opacity: 0.7;
