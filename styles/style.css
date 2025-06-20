@@ -59,7 +59,7 @@ ol {
   align-items: center;
   inline-size: 1200px;
   block-size: 100%;
-  font-family: "Fira Sans Condensed", "Sans Serif";
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   color: #fff;
   background-color: #1b1919;
@@ -89,7 +89,7 @@ ol {
   text-decoration: none;
   font-size: 18px;
   font-weight: 400;
-  font-family: "Fira Sans Condensed", "Sans Serif";
+  font-family: "Fira Sans Condensed", sans-serif;
   color: #fff;
 }
 
@@ -141,7 +141,7 @@ ol {
   /* ПО */
   font-size: 75px;
   font-weight: 700;
-  font-family: "Oswald", "sans serif";
+  font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   color: #545050;
 }
@@ -154,7 +154,7 @@ ol {
 .content__video-card-title {
   font-size: 30px;
   font-weight: 700;
-  font-family: "Oswald", "sans serif";
+  font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   color: #ffffff;
   text-decoration: none;
@@ -168,23 +168,24 @@ ol {
 }
 
 .content__video-card-thumbnail {
-  width: 194px;
-  height: 103px;
+  width: 195px;
+  height: 100px;
   object-fit: cover;
   object-position: center;
+  margin-right: 5px;
 }
 
 .content__video-card-description {
   font-size: 18px;
-  font-weight: 400;
-  line-height: 1;
+  font-weight: normal;
+  line-height: 16px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
   overflow: hidden; /* Скрывает излишний текст */
   text-overflow: ellipsis; /* Заменяет излишний текст на "..." */
   letter-spacing: 0;
-  font-family: "Fira Sans Condensed", "sans serif";
+  font-family: "Fira Sans Condensed", sans-serif;
   color: #ffffff;
 }
 
@@ -234,7 +235,7 @@ ol {
   font-size: 18px;
   font-weight: 400;
   line-height: 100%;
-  font-family: "fira Sans Condensed", "sans serif";
+  font-family: "fira Sans Condensed", sans-serif;
   color: #ffffff;
   text-align: left;
   /* Фича */
@@ -251,7 +252,7 @@ ol {
   color: #ffffff;
   line-height: 100%;
   min-width: 226px;
-  font-family: "Fira Sans Condensed", "sans serif";
+  font-family: "Fira Sans Condensed", sans-serif;
 }
 
 .search-form__label-text {
@@ -303,7 +304,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
 .title {
   font-size: 75px;
   font-weight: 700;
-  font-family: "Oswald", "sans serif";
+  font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   color: #ffffff;
   line-height: 94%;
@@ -314,7 +315,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
   display: block;
   border: solid 1px #ffffff; /* Задайте рамку  кнопки */
   color: #ffffff; /* Задайте цвет текста кнопки */
-  font-family: "Fira Sans Condensed", "sans serif";
+  font-family: "Fira Sans Condensed", sans-serif;
   background-color: transparent; /* Задайте прозрачный фон кнопки */
   font-size: 18px;
   align-content: end;
