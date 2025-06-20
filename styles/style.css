@@ -208,7 +208,7 @@ ol {
   flex-direction: column;
   width: 711px;
   height: 386px;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .result__video {
@@ -224,7 +224,6 @@ ol {
   text-decoration: none;
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
-  margin-bottom: 3px;
 }
 
 .search-form__label {
@@ -280,6 +279,9 @@ ol {
 .search-form__label-text:hover {
   text-decoration: underline;
   cursor: pointer;
+    text-underline-offset: 0.2em;
+  text-decoration-thickness:1px ;
+  text-decoration-skip-ink: none;
 }
 
 .search-form__pseudo-checkbox {
@@ -308,6 +310,13 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
 
 .search-form__textfield::placeholder {
   color: rgb(255 255 255 / 0.7);
+}
+
+.search-form__label:hover .search-form__label-text {
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-underline-position: from-font;
 }
 
 .title {
@@ -351,10 +360,12 @@ button:focus {
 
 .search-form__submit-button:focus-visible {
   outline: solid 1px #ffffff;
+  text-underline-offset: 0.2em;
+  text-decoration-thickness: 1px;
+  text-decoration-skip-ink: none;
 }
 
 .more-button {
-  margin-bottom: 3px;
   width: 390px;
   height: 39px;
 }
@@ -370,4 +381,7 @@ button:focus {
 
 .more-button:focus-visible {
   outline: solid 1px #ffffff;
+  text-underline-offset: 0.2em;
+  text-decoration-thickness: 3px ;
+  text-decoration-skip-ink: none;
 }
