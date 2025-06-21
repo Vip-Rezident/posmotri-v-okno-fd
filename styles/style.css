@@ -79,6 +79,7 @@ ol {
   display: grid;
   gap: 30px;
   justify-content: space-between;
+  align-content: space-between;
   margin-left: 1px;
   margin-bottom: 30px;
 }
@@ -174,13 +175,13 @@ ol {
   overflow: hidden; /* Скрывает излишний текст */
   text-overflow: ellipsis; /* Заменяет излишний текст на "..." */
   white-space: nowrap; /* Запрещает перенос строк */
-  max-width: 192px;
+  max-width: 193px;
   line-height: 95%;
 }
 
 .content__video-card-thumbnail {
   width: 193px;
-  height: 99px;
+  height: 102px;
   object-fit: cover;
   object-position: center;
   margin-left: 3px;
