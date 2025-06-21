@@ -80,6 +80,7 @@ ol {
   gap: 30px;
   justify-content: space-between;
   margin-left: 1px;
+  margin-bottom: 30px;
 }
 
 .content__list-item {
@@ -122,13 +123,17 @@ ol {
   text-decoration: none;
 }
 
+.content__card-link_current {
+  background-color: #545050;
+}
+
 .content_card-link:focus {
   outline: none;
 }
 
 .content_card-link:focus-visible {
   outline: solid 1px #545050;
-  outline-offset: 1px;
+  outline-offset: 2px;
 }
 
 .content_card-link:hover {
@@ -141,6 +146,7 @@ ol {
 
 .content_card-link:active {
   background-color: #545050;
+  text-decoration: none;
 }
 
 .content__accent {
@@ -168,9 +174,6 @@ ol {
   overflow: hidden; /* Скрывает излишний текст */
   text-overflow: ellipsis; /* Заменяет излишний текст на "..." */
   white-space: nowrap; /* Запрещает перенос строк */
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
   max-width: 192px;
   line-height: 95%;
 }
@@ -208,7 +211,7 @@ ol {
   flex-direction: column;
   width: 711px;
   height: 386px;
-  margin-bottom: 16px;
+  margin-bottom: 19px;
 }
 
 .result__video {
@@ -380,7 +383,7 @@ button:focus {
 }
 
 .more-button:focus-visible {
-  outline: solid 1px #ffffff;
+  outline: solid 1px #ffffff; /* Вторая рамка */
   text-underline-offset: 0.2em;
   text-decoration-thickness: 3px ;
   text-decoration-skip-ink: none;
