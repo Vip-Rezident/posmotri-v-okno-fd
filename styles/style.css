@@ -140,7 +140,7 @@ ol {
   text-decoration: underline;
   cursor: pointer;
   text-underline-offset: 0.2em;
-  text-decoration-thickness:1px ;
+  text-decoration-thickness: 1px;
   text-decoration-skip-ink: none;
 }
 
@@ -179,8 +179,8 @@ ol {
 }
 
 .content__video-card-thumbnail {
-  width: 196px;
-  height: 96px;
+  width: 193px;
+  height: 99px;
   object-fit: cover;
   object-position: center;
   margin-left: 3px;
@@ -189,7 +189,7 @@ ol {
 .content__video-card-description {
   font-size: 18px;
   font-weight: normal;
-  line-height: 16px;
+  line-height: 30px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
@@ -198,7 +198,6 @@ ol {
   letter-spacing: 0;
   font-family: "Fira Sans Condensed", sans-serif;
   color: #ffffff;
-  
 }
 
 .content__video-card-description-container {
@@ -282,8 +281,8 @@ ol {
 .search-form__label-text:hover {
   text-decoration: underline;
   cursor: pointer;
-    text-underline-offset: 0.2em;
-  text-decoration-thickness:1px ;
+  text-underline-offset: 0.2em;
+  text-decoration-thickness: 1px;
   text-decoration-skip-ink: none;
 }
 
@@ -328,8 +327,8 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   color: #ffffff;
-  line-height: 92%;
-  margin-bottom: 26px;
+  line-height: 93%;
+  margin-bottom: 25px;
 }
 
 .button {
@@ -385,6 +384,6 @@ button:focus {
 .more-button:focus-visible {
   outline: solid 1px #ffffff; /* Вторая рамка */
   text-underline-offset: 0.2em;
-  text-decoration-thickness: 3px ;
+  text-decoration-thickness: 3px;
   text-decoration-skip-ink: none;
 }
