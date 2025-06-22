@@ -231,6 +231,12 @@ ol {
   width: fit-content; /* Ширина элемента подстраивается под его содержимое */
 }
 
+.search-form__label:focus-visible {
+  border: solid 1px #ffffff;
+  outline: solid 1px #ffffff;
+  outline-offset: 2px; /* расстояние между рамками */
+}
+
 .search-form__fieldset {
   display: flex;
   flex-direction: column;
@@ -359,8 +365,9 @@ button:focus {
 }
 
 .search-form__submit-button:focus-visible {
+  border: solid 1px #ffffff;
   outline: solid 1px #ffffff;
-  text-underline-offset: 0.05em;
+  outline-offset: 2px; /* расстояние между рамками */
   text-decoration-thickness: 1px;
   text-decoration-skip-ink: none;
 }
@@ -380,8 +387,9 @@ button:focus {
 }
 
 .more-button:focus-visible {
+  border: solid 1px #ffffff;
   outline: solid 1px #ffffff;
-  text-underline-offset: 0.05em;
+  outline-offset: 2px; /* расстояние между рамками */
   text-decoration-thickness: 3px;
   text-decoration-skip-ink: none;
 }
