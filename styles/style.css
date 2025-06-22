@@ -98,10 +98,6 @@ ol {
   color: #fff;
 }
 
-.content__list-item a:active {
-  background-color: #545050;
-}
-
 .content__list-container {
   grid-area: list-container;
   overflow-y: auto; /* Полоса прокрутки при переполнении */
@@ -140,7 +136,7 @@ ol {
 .content__card-link:hover {
   text-decoration: underline;
   cursor: pointer;
-  text-underline-offset: .05em;
+  text-underline-offset: 0.05em;
   text-decoration-thickness: 1px;
   text-decoration-skip-ink: none;
 }
@@ -211,7 +207,7 @@ ol {
   flex-direction: column;
   width: 711px;
   height: 386px;
-  margin-bottom: 19px;
+  margin-bottom: 20px;
 }
 
 .result__video {
@@ -256,6 +252,7 @@ ol {
   font-size: 18px;
   font-weight: 400;
   border-top: solid 1px #fff;
+  border-bottom: solid 1px #fff;
   border-left: none;
   border-right: none;
   background-color: inherit;
@@ -328,7 +325,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
   text-transform: uppercase;
   color: #ffffff;
   line-height: 93%;
-  margin-bottom: 25px;
+  margin-bottom: 22px;
 }
 
 .button {
@@ -363,14 +360,14 @@ button:focus {
 
 .search-form__submit-button:focus-visible {
   outline: solid 1px #ffffff;
-  text-underline-offset: 0.2em;
+  text-underline-offset: 0.05em;
   text-decoration-thickness: 1px;
   text-decoration-skip-ink: none;
 }
 
 .more-button {
   width: 390px;
-  height: 39px;
+  height: 34px;
 }
 
 .more-button:hover {
@@ -383,8 +380,10 @@ button:focus {
 }
 
 .more-button:focus-visible {
-  outline: solid 1px #ffffff; /* Вторая рамка */
-  text-underline-offset: 0.2em;
+  outline: solid 1px #ffffff;
+  text-underline-offset: 0.05em;
   text-decoration-thickness: 3px;
   text-decoration-skip-ink: none;
 }
+
+/* Спасибо большое за ваше терпение, у вас не лёгкая работа) */
